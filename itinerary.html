@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Itinerary Planner | Tourist Guide{% endblock %}
+
+{% block content %}
+<h1>Plan Your Trip</h1>
+<form>
+    <div class="mb-3">
+        <label for="destination" class="form-label">Destination</label>
+        <input type="text" class="form-control" id="destination" placeholder="Enter destination">
+    </div>
+    <div class="mb-3">
+        <label for="travelDates" class="form-label">Travel Dates</label>
+        <input type="date" class="form-control" id="travelDates">
+    </div>
+    <div class="mb-3">
+        <label for="travelers" class="form-label">Number of Travelers</label>
+        <input type="number" class="form-control" id="travelers" placeholder="Enter number of people">
+    </div>
+    <button type="submit" class="btn btn-primary">Plan</button>
+</form>
+{% endblock %}

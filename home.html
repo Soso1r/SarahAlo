@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Tourist Guide{% endblock %}
+
+{% block content %}
+<h1>Welcome to the Tourist Guide System</h1>
+<p>Your gateway to exploring the beauty of KSA with ease.</p>
+<div class="row">
+    <div class="col-md-4">
+        <h3>Plan Your Itinerary</h3>
+        <p>Customize your travel plans and explore at your own pace.</p>
+        <a href="/itinerary" class="btn btn-primary">Get Started</a>
+    </div>
+    <div class="col-md-4">
+        <h3>Discover Destinations</h3>
+        <p>Find top attractions and hidden gems across KSA.</p>
+        <a href="/destinations" class="btn btn-primary">Learn More</a>
+    </div>
+    <div class="col-md-4">
+        <h3>Real-Time Updates</h3>
+        <p>Stay informed about events, weather, and transportation.</p>
+        <a href="/real_time_updates" class="btn btn-primary">Stay Updated</a>
+    </div>
+</div>
+{% endblock %}
